@@ -1,0 +1,37 @@
+.flex-container {
+    justify-content: center;
+    align-items: center;
+    height: 67vh;
+}
+
+.add-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    img {
+        justify-self: center;
+        width: 12vh;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        align-self: end;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        input {
+            margin-bottom: 5px;
+            padding: 8px 15px;
+        }
+    }
+    button {
+        margin-top: -3px;
+        border-radius: 4px;
+        background-color: rgb(235, 51, 79);
+        border: 1px solid darkblue;
+        color: whitesmoke;
+        height: 30px;
+        width: 70px;
+        // padding: 10px 20px;
+        justify-self: end;
+    }
+}

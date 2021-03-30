@@ -1,0 +1,112 @@
+.green {
+    color: #adff2f;
+}
+.dark-blue {
+    color: rgb(52, 52, 53);
+    font-size: 14px;
+}
+.margin-bottom-top-5px {
+    margin: 5px 0px !important;
+}
+.margin-bottom-15px {
+    margin-bottom: 15px !important;
+}
+.big-money {
+    font-size: 30px !important;
+}
+
+.home-container {
+    display: flex;
+    color: rgb(223, 221, 221);
+    // justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    .user-container {
+        header {
+            // padding: 10px 10px 5px 10px;
+            font-size: 1.3rem;
+        }
+        hr {
+            border: 1px solid rgb(59, 59, 59);
+        }
+        .user-details {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                opacity: 0.6;
+                margin: 0;
+                font-size: 14px;
+            }
+            span {
+                font-size: 18px;
+                font-weight: 600px;
+                margin-bottom: 20px;
+            }
+        }
+        // font-size: 20px;
+        // text-transform: capitalize;
+        // width: 300px;
+        // height: 400px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // // border: 1px solid black;
+        // border-radius: 3px;
+        // padding: 15px;
+        // margin-top: 75px;
+        .user-details {
+            background-color: rgba(185, 185, 185, 0.171);
+            padding: 10px ;
+            border-radius:4px;
+        }
+    }
+
+    .moves-container{
+        margin-top: 24px;
+        height: 26vh;
+        overflow: overlay;
+        .moves-preview{
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            background-color: rgba(9, 34, 80, 0.418);
+            margin-bottom: 10px;
+            padding: 20px;
+            border-radius: 4px;
+            max-height: 20px;
+            font-size: 18px;
+            font-weight: 700px;
+        }
+
+    }
+}
+
+.moves-container::-webkit-scrollbar {
+    width: 10px;
+    height: 22px;
+    position: absolute;
+    z-index: 0;
+    margin-right: 100px;
+    padding-right: 100px;
+    padding-right: 100px;
+}
+/* Track */
+.moves-container::-webkit-scrollbar-track {
+    background: #4443432d;
+    border-radius: 9px;
+    margin-right: 100px;
+    padding-right: 100px;
+}
+/* Handle */
+.moves-container::-webkit-scrollbar-thumb {
+    padding-right: 100px;
+    margin-right: 100px;
+    height: 50px;
+    // background: #46474734;
+    background-color: rgb(235, 51, 79);
+
+    // background: rgba(190, 190, 199, 0.79);
+    border-radius: 9px;
+    // border
+}
+

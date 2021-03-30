@@ -1,0 +1,40 @@
+<div class="home-container">
+
+    <div class="user-container" *ngIf="user">
+        <!-- <img src="../../../assets/img/contact.png" alt=""> -->
+
+        <header>
+            <!-- <img src="../../../assets/img/contact.png" alt=""> -->
+            <span> HI, {{user?.name}}</span>
+        </header>
+        <hr>
+
+        <div class="user-details">
+
+            <div>
+                <p>CURRENT BALANCE</p>
+                <div class="margin-bottom-top-5px">
+                    <span>BIT: <span class="green">B {{(user?.coins).toFixed(3)}} </span></span> <br>
+                </div>
+                    <span > USD: <span >$ {{myMoney | number}}</span> </span>
+
+            </div>
+
+            <div >
+                <p class="margin-bottom-15px" >CURRENT BTC USD</p>
+                <span class="big-money" >$ {{btcToUsd| number}}</span>
+            </div>
+
+        </div>
+
+        <static-page></static-page>
+    </div>
+
+    <h2>All Moves</h2>
+    <div class="moves-container">
+        <div *ngFor="let move of user?.moves" class="moves-preview">
+            <move-list [move]="move"></move-list>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+<div class="flex-container">
+
+    <div class="add-container">
+        <img src="../../../assets/img/profile.jpg" alt="">
+        <form action="">
+            <input type="text" name="name" [(ngModel)]='newContact.name' placeholder="name"> 
+            <input type="text" name="phone" [(ngModel)]='newContact.phone'  placeholder="phone">
+            <input type="text" name="email" [(ngModel)]='newContact.email'  placeholder="email">
+        </form>
+        <button (click)='onSubmit()'>submit</button>
+    </div>
+
+
+
+    <!-- <move-list [move]="move"></move-list> -->
+
+</div>
+
+<style>
+
+ 
+</style>

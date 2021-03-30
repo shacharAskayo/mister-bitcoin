@@ -1,0 +1,46 @@
+<div>
+    <button (click)='onEditContact(contact._id)'>edit</button>
+    <button (click)='onRemove(contact._id)'>delete</button>
+    <div class="flex-container">
+        <div class="details-container">
+            <img src="../../../assets/img/profile.jpg" alt="">
+            <div class="details">
+                <h1>{{contact.name}}</h1>
+                <h3>{{contact.phone}}</h3>
+                <h3>{{contact.email}}</h3>
+            </div>
+            <transfer-fund [contact]=contact></transfer-fund>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div>
+    <span>Name: {{contact.name}}</span> <br><br>
+    <span>Phone: {{contact.phone}}</span> <br><br>
+    <span>Email: {{contact.email}}</span> <br><br>
+</div>
+    <div *ngFor="let move of contact.moves">
+        <move-list  [move]='move'></move-list>
+    </div>
+
+<transfer-fund [contact]="contact"></transfer-fund>
+<button (click)='onEditContact(contact._id)'>edit</button>
+<button (click)='onRemove(contact._id)'>delete</button> -->
+<!-- <li><a routerLink="/edit/{{contact._id}}" routerLinkActive="active-nav" >another way</a></li> -->
+
+<!-- <button [routerLink]="['edit',contact._id]">edit</button>  <======= Nope       -->
